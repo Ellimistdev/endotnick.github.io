@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import About from './components/About.vue'
-import Intro from './components/Intro.vue'
-import Nav from './components/Nav.vue'
-import Projects from './components/Projects.vue'
-import Resume from './components/Resume.vue'
+import About from './components/About';
+import Intro from './components/Intro';
+import Nav from './components/Nav';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
 
 export default {
   name: 'app',
@@ -20,9 +20,9 @@ export default {
     Intro,
     Nav,
     Projects,
-    Resume
-  }
-}
+    Resume,
+  },
+};
 </script>
 
 <style>
@@ -32,9 +32,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;  
+  margin-top: 60px;
 }
-body {  
+body {
   max-width: 800px;
   margin: 0 auto;
 }

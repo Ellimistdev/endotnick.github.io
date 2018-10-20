@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">    
+  <nav class="nav">
     <ul>
       <li><a href="/">About</a></li>
       <li><a href="/resume">Resume</a></li>
@@ -11,8 +11,8 @@
 
 <script>
 export default {
-  name: 'Nav'
-}
+  name: 'Nav',
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

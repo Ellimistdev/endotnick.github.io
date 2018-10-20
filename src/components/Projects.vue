@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'Projects'
-}
+  name: 'Projects',
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
