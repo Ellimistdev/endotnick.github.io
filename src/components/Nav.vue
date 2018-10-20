@@ -2,8 +2,8 @@
   <nav class="nav">
     <ul>
       <li><a href="/">About</a></li>
-      <li><a href="/resume">Resume</a></li>
-      <li><a href="/projects">Projects</a></li>
+      <li><a href="/">Resume</a></li>
+      <li><a href="/">Projects</a></li>
       <!--li><a href="/blog">Blog</a></li-->
     </ul>
   </nav>
@@ -21,5 +21,8 @@ nav{
   border-style: solid;
   border-color: #d5d5d5;
   border-width: 1px 0;
+}
+a {
+  text-decoration: line-through;
 }
 </style>
