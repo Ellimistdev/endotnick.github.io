@@ -7,6 +7,7 @@
       <Resume v-if="state === 1"/>
       <Projects v-if="state === 2"/>
     </div>
+    <Footer/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Intro from './components/Intro';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 export default {
   name: 'app',
@@ -25,6 +27,7 @@ export default {
     Nav,
     Projects,
     Resume,
+    Footer,
   },
   data: function data() {
     return {
