@@ -1,7 +1,7 @@
 <template>
   <footer>
     <span>
-      <font-awesome-icon icon="code" /> w/ <font-awesome-icon icon="heart" /> by <a href='#'>n.</a>
+      <font-awesome-icon icon="code" /> w/ <font-awesome-icon icon="heart" /> by <a href='https://github.com/endotnick/endotnick.github.io'>n.</a>
     </span>
   </footer>
 </template>
