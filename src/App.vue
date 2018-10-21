@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <Intro/>
-    <Nav/>
-    <Content/>
+    <Nav v-on:stateChangeTriggered="updateState($event)"/>
+    <div id="content">
+      <About v-if="state === 0"/>
+      <Resume v-if="state === 1"/>
+      <Projects v-if="state === 2"/>
+    </div>
   </div>
 </template>
 
@@ -21,6 +25,16 @@ export default {
     Nav,
     Projects,
     Resume,
+  },
+  data: function data() {
+    return {
+      state: 0,
+    };
+  },
+  methods: {
+    updateState: function updateState(val) {
+      this.state = val;
+    },
   },
 };
 </script>

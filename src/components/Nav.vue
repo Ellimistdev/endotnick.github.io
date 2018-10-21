@@ -1,9 +1,10 @@
 <template>
   <nav class="nav">
     <ul>
-      <li><a href="/">About</a></li>
-      <li><a href="/">Resume</a></li>
-      <li><a href="/">Projects</a></li>
+      <li><a href='#' v-on:click="setState(0)">About</a></li>
+      <li><a href='#' v-on:click="setState(1)">Resume</a></li>
+      <li><a href='#' v-on:click="setState(2)">Projects</a></li>
+      <span><font-awesome-icon icon="arrow-left" />This is all coming soon</span>
       <!--li><a href="/blog">Blog</a></li-->
     </ul>
   </nav>
@@ -12,6 +13,11 @@
 <script>
 export default {
   name: 'Nav',
+  methods: {
+    setState: function setState(value) {
+      this.$emit('stateChangeTriggered', value);
+    },
+  },
 };
 </script>
 
