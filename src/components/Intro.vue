@@ -1,7 +1,7 @@
 <template>
   <div class="intro">
     <div class="hello">
-      <img src="../assets/avatar.png"/>
+      <img src="../assets/avatar.webp"/>
       <h1>Hello! I'm Nick.</h1>
     </div>
     <div class="social">
@@ -42,7 +42,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
     margin: .3em 0;
@@ -55,5 +54,10 @@ img {
   border-radius: 15em;
   width: 200px;
   height: auto;
+}
+.intro {
+  max-width: 800px;
+  width: 100%;
+  height: 350px;
 }
 </style>

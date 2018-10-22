@@ -1,10 +1,10 @@
 <template>
   <nav class="nav">
     <ul>
-      <li><a href='#' v-on:click="setState(0)">About</a></li>
-      <li><a href='#' v-on:click="setState(1)">Resume</a></li>
-      <li><a href='#' v-on:click="setState(2)">Projects</a></li>
-      <span><font-awesome-icon icon="arrow-left" />This is all coming soon</span>
+      <li><a href='#' v-on:click="setView(0)">About</a></li>
+      <li><a href='#' v-on:click="setView(1)">Projects</a></li>
+      <li><a href='#' v-on:click="setView(2)">Resume</a></li>
+      <span><font-awesome-icon icon="arrow-left" /> This is all coming soon</span>
       <!--li><a href="/blog">Blog</a></li-->
     </ul>
   </nav>
@@ -14,14 +14,13 @@
 export default {
   name: 'Nav',
   methods: {
-    setState: function setState(value) {
-      this.$emit('stateChangeTriggered', value);
+    setView: function setView(value) {
+      this.$emit('viewChangeTriggered', value);
     },
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 nav{
   border-style: solid;

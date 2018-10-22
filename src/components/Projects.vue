@@ -1,6 +1,6 @@
 <template>
   <div>
-     <p>Projects rendered</p>
+     <p>Project view rendered</p>
   </div>
 </template>
 
@@ -10,6 +10,5 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 </style>
