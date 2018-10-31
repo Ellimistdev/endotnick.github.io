@@ -1,18 +1,24 @@
 <template>
   <div>
-     <p>Resume view rendered</p>
-     <pdf src="https://github.com/endotnick/endotnick.github.io/raw/development/src/assets/NickRodriguezResume_public.pdf" :page=1></pdf>
+    <vuepdf :src='pdf'></vuepdf>
   </div>
 </template>
 
 <script>
-import pdf from 'pdfvuer';
+import vuepdf from 'vue-pdf';
+import file from '../assets/NickRodriguezResume_public.pdf';
 
 export default {
   name: 'Resume',
 
   components: {
-    pdf,
+    vuepdf,
+  },
+
+  data() {
+    return {
+      pdf: file,
+    };
   },
 };
 </script>
